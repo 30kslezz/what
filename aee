@@ -79,7 +79,7 @@ local splitteddata = Split(data:sub(1, -2), "N")
 for fhnrteyrtnhi,line in pairs(splitteddata) do
     if _G.Enabled then
        local finalstring = ""
-       local currentd = 3
+       local currentd = 1
        local themlines = Split(line:sub(1, -2), "A")
        for i, lineb in pairs(themlines) do
            local rgb = Split(lineb, " ")
@@ -89,7 +89,7 @@ for fhnrteyrtnhi,line in pairs(splitteddata) do
                finalstring = finalstring .. chara
            else
                finalstring = finalstring .. chara .. "\n"
-               currentd = 3
+               currentd = 0
            end
            currentd = currentd + 1
        end
