@@ -1,6 +1,6 @@
 _G.Enabled = true
 --local data = readfile("nframes/owl.txt")
-local data = game:HttpGet("https://raw.githubusercontent.com/o7-Fire/Roblox-4/main/the-booth-plaza/amongus.txt") -- prerendered amongus video
+local data = game:HttpGet("https://raw.githubusercontent.com/30kslezz/idk/main/LICENSE.md") -- prerendered amongus video
 
 function update(text)
     local args = {
@@ -91,7 +91,7 @@ for fhnrteyrtnhi,line in pairs(splitteddata) do
                finalstring = finalstring .. chara .. "\n"
                currentd = 0
            end
-           currentd = currentd + 1
+           currentd = currentd + 100
        end
        coroutine.wrap(update)(finalstring)
        task.wait(.03)
